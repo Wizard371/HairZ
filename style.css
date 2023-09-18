@@ -1,0 +1,390 @@
+/* IMPORT FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+
+/* BODY */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+    background-color: #ededed;
+}
+
+/* Farve Variabler */
+
+:root {
+    --baggrund: rgb(75, 142, 149);
+    --logobaggrund: #20263f;
+    --navbtnback: #1b2130;
+    --border-color: #95cdd3;
+}
+
+/* NAV */
+
+nav {
+    background-color: var(--baggrund);
+    height: 15vh;
+    display: flex;
+}
+
+/* LOGO */
+
+.bluebox-container {
+    height: 11vh;
+    width: 15vw;
+    background-color: var(--logobaggrund);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6em;
+    margin-left: 10vw;
+    position: absolute;
+    margin-top: 5vh;
+}
+
+/* NAV KNAPPER */
+
+.btn-wrapper {
+    display: flex;
+    height: 60px;
+    width: 63%;
+    margin-left: 30vw;
+    margin-top: 6.5vh;
+}
+
+.btn-wrapper a {
+    margin: auto;
+    padding: 10px;
+    font-size: 1.3em;
+    background-color: var(--navbtnback);
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#active {
+    background-color: #335f64;
+}
+
+/* MAIN */
+
+.title-container {
+    margin: 0vh 10vw;
+    border: 2px solid var(--border-color);
+    background-color: white;
+    margin-top: 5vh;
+    display: flex;
+}
+
+.title-container img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.title-container h1 {
+    margin: auto;
+    margin-left: 5vw;
+    font-size: 4rem;
+    font-family: 'Changa One', cursive;
+}
+
+/* HAIRS */
+
+.hairs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10vw;
+    margin-top: 5vh;
+}
+
+.hairs-card {
+    width: 20%;
+}
+
+/* MANGLER!!! */
+/* BOX SHADOW */
+
+.hairs-card img {
+    max-width: 100%;
+    height: auto;
+    border: 8px solid var(--border-color);
+}
+
+.hairs-card h3 {
+    margin: 15px 0px;
+    font-size: 1.4em;
+}
+
+.hairs-card p {
+    font-size: 0.9em;
+    color: grey;
+}
+
+/* FEATURED / HAIRSTYLE / LOSING YOUR HAIR CONTAINER */
+.feathairs-container {
+    height: 50vh;
+    margin: 5vw 10vw;
+    display: flex;
+    color: white;
+}
+
+/* FEATURED */
+
+.featured-container {
+    height: 100%;
+    width: 50vw;
+    border: 4px solid var(--border-color);
+}
+
+.feat-top {
+    display: flex;
+    color: grey;
+    font-size: 1.2em;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 2vw;
+}
+
+.feat-top h3 {
+    margin-left: 2vw;
+}
+
+.feat-top img {
+    height: 100px;
+}
+
+.feat-mid {
+    margin: 5vh 2vw;
+    color: grey;
+}
+
+.feat-mid article {
+    margin-top: 4vh;
+    font-size: 0.6em;
+}
+
+/* 2nd WRAPPER */
+
+.second-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-left: 5%;
+}
+
+/* HAIRSTYLE CONTAINER */
+
+.hairstyle-container {
+    height: 22.5vh;
+    width: 100%;
+    border: 4px solid var(--border-color);
+    margin-bottom: 5vh;
+    background-color: #335f64;
+}
+
+.hairstyle-container p {
+    margin: 0vh 2vw;
+    margin-top: 2vh;
+    font-size: 1em;
+}
+
+/* LOSING HAIR CONTAINER */
+
+.loshair-container {
+    height: 22.5vh;
+    width: 100%;
+    border: 4px solid var(--border-color);
+    background-color: #335f64;
+    display: flex;
+}
+
+.loshair-container img {
+    margin-top: -1vh;
+    height: 107%;
+}
+
+.loshair-text {
+    font-size: 1.2em;
+    margin-left: 2vw;
+}
+
+/* BLUE BOX */
+
+.bluebox {
+    background-color: var(--logobaggrund);
+    width: 200px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.5vh;
+    margin-left: 2vw;
+    font-size: 0.9em;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 800px) {
+    nav {
+        height: 10vh;
+        flex-direction: column;
+    }
+
+    .bluebox-container {
+        width: 20%;
+        height: 5vh;
+        margin: 0;
+        text-align: center;
+        font-size: 0.7rem;
+        margin-top: 12.2%;
+        margin-left: 5vw;
+    }
+
+    .btn-wrapper {
+        width: 60%;
+        margin-left: 30%;
+        height: 100%;
+        margin-top: 13%;
+    }
+    .btn-wrapper a {
+        font-size: 0.5em;
+        padding: 5px;
+    }
+
+    .title-container {
+        width: 80vw;
+    }
+
+    .img-parent img {
+        height: 100%;
+    }
+
+    .title-container h1 {
+        font-size: 1.7em;
+    }
+
+    .hairs-card {
+        width: calc(50% - 20px);
+    }
+
+    .hairs-card p {
+        font-size: 0.6em;
+        margin-bottom: 2vh;
+    }
+
+    .feat-top img {
+        width: 50px;
+        height: 60px;
+    }
+
+    .feat-top h3 {
+        font-size: 0.6em;
+    }
+
+    .feat-mid article {
+        font-size: 0.4em;
+        margin: 15px;
+    }
+
+    .feat-mid {
+        margin: 0;
+    }
+
+    .bluebox {
+        width: 70px;
+        font-size: 0.4em;
+    }
+
+    .featured-container {
+        width: 100%;
+    }
+
+    .second-wrapper {
+        width: 50%;
+    }
+
+    .hairstyle-container p {
+        font-size: 0.5em;
+        line-height: 12px;
+        margin-top: 2vh;
+    }
+
+    .loshair-container img {
+        width: 60px;
+    }
+
+    .loshair-container h3 {
+        font-size: 0.4em;
+        margin-top: 20%;
+    }
+}
+
+/* Animationer */
+
+.tile {
+    -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+    transform: translateY(50px) rotate(-5deg) translateZ(0);
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    opacity: 0;
+}
+
+.bottom-right.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+
+.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+
+section {
+    padding:20px;
+}
+
+.hover-scale {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+    transform: scale(1.1);
+}
+
+.bluebox-container {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.btn-wrapper a {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-wrapper a:hover {
+    background-color: #335f64; 
+}
+
+.hairs-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hairs-card:hover {
+    transform: scale(1.1); 
+}
